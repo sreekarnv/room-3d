@@ -11,7 +11,7 @@ const Room: React.FC<RoomProps> = ({}) => {
 
   return (
     <>
-      <OrbitControls makeDefault enableDamping enableZoom={false} />
+      <OrbitControls makeDefault enableDamping />
       <mesh
         rotation-y={-Math.PI * 0.25}
         rotation-x={Math.PI * 0.05}
