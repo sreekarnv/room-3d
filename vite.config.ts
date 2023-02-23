@@ -12,4 +12,5 @@ export default defineConfig({
       '@': '/src',
     },
   },
+  base: '/room-3d/',
 });

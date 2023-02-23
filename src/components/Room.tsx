@@ -6,8 +6,11 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 interface RoomProps extends React.PropsWithChildren {}
 
 const Room: React.FC<RoomProps> = ({}) => {
-  const { nodes } = useLoader(GLTFLoader, '/room.glb');
-  const textureMap = useTexture('/baked.png');
+  const { nodes } = useLoader(
+    GLTFLoader,
+    `${import.meta.env.BASE_URL}room.glb`
+  );
+  const textureMap = useTexture(`${import.meta.env.BASE_URL}baked.png`);
 
   return (
     <>
