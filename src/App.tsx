@@ -1,5 +1,6 @@
-import { Canvas } from '@react-three/fiber';
-import Box from '@/components/Box';
+import { Canvas, useThree } from '@react-three/fiber';
+import { Center } from '@react-three/drei';
+import Room from '@/components/Room';
 
 const App = () => {
   return (
@@ -7,7 +8,10 @@ const App = () => {
       <Canvas>
         <ambientLight intensity={0.1} />
         <directionalLight color="yellow" position={[0, 0, 5]} />
-        <Box />
+        <color args={['#111']} attach="background" />
+        <Center>
+          <Room />
+        </Center>
       </Canvas>
     </>
   );
