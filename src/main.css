@@ -22,6 +22,10 @@ body {
   height: 100%;
 }
 
+body {
+  background: var(--color-dark);
+}
+
 canvas {
   height: 100vh;
 }
@@ -46,6 +50,12 @@ a {
   color: var(--color-light-1);
 }
 
+@media (max-width: 768px) {
+  .github-repo-link {
+    top: 0;
+  }
+}
+
 .github-repo-link svg {
   width: 1.6rem;
   height: 1.6rem;
@@ -63,6 +73,12 @@ a {
 .footer__text {
   font-weight: 600;
   color: var(--color-light-1);
+}
+
+@media (max-width: 768px) {
+  .footer__text {
+    text-align: center;
+  }
 }
 
 .footer__link {
